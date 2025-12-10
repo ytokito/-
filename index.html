@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>大日本十熙人社会主義共和国連邦 - 内閣</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      header {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      header .flag-bg {
+        width: 100%;
+        height: 450px; /* ヘッダー専用の高さ */
+        object-fit: cover;
+        display: block;
+      }
+      header .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 3rem;
+      }
+      header p {
+        margin: 10px 0 0;
+        font-size: 1.2rem;
+      }
+      nav {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 15px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 5px 10px;
+        transition: background-color 0.2s ease;
+      }
+      nav ul li a:hover {
+        background-color: white;
+        color: #de2910;
+        border-radius: 4px;
+      }
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .member-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 20px;
+      }
+      .member-card {
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        padding-bottom: 10px;
+
+        /* スクロールアニメーション初期状態 */
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+      }
+      .member-card.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .member-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+      .member-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
+      .member-card h2 {
+        font-size: 1.1rem;
+        margin: 10px 0 5px;
+        color: #af0000;
+      }
+      .member-card p {
+        margin: 0 0 10px;
+        font-size: 0.9rem;
+        color: #555;
+      }
+      footer {
+        background-color: #de2910;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="ととと.png" alt="連邦国旗" class="flag-bg" />
+      <div class="overlay">
+        <h1>大日本十熙人社会主義共和国連邦 内閣</h1>
+        <p>国を支えるリーダーたちを紹介します</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="history.html">歴史</a></li>
+          <li><a href="constitution.html">憲法</a></li>
+          <li><a href="culture.html">文化</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="member-grid">
+        <!-- 書記長 -->
+        <a href="profile-yadome.html" class="member-card">
+          <img src="profile.png" alt="書記長 矢留 十熙人" />
+          <h2>書記長 矢留 十熙人</h2>
+          <p>国の代表として政策を推進します。</p>
+        </a>
+        <!-- 外務大臣 -->
+        <a href="profile-ichijo.html" class="member-card">
+          <img src="pinnku.png" alt="外務大臣 一条 ブリリアント 真理子" />
+          <h2>外務大臣 一条 ブリリアント 真理子</h2>
+          <p>外交を担当し、国際関係を築きます。</p>
+        </a>
+        <!-- 財務大臣 -->
+        <a href="profile-suzuki.html" class="member-card">
+          <img src="kinn.png" alt="財務大臣 鈴木 一郎" />
+          <h2>財務大臣 鈴木 一郎</h2>
+          <p>経済と財政を管理します。</p>
+        </a>
+        <!-- 防衛大臣 -->
+        <a href="profile-takahashi.html" class="member-card">
+          <img src="ao.png" alt="防衛大臣 高橋 美咲" />
+          <h2>防衛大臣 高橋 美咲</h2>
+          <p>国の安全保障を守ります。</p>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 大日本十熙人社会主義共和国連邦 内閣</p>
+    </footer>
+
+    <!-- スクロールアニメーション用スクリプト -->
+    <script>
+      function revealCards() {
+        document.querySelectorAll(".member-card").forEach((card) => {
+          const rect = card.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 50) {
+            card.classList.add("show");
+          }
+        });
+      }
+      window.addEventListener("scroll", revealCards);
+      window.addEventListener("DOMContentLoaded", revealCards);
+    </script>
+  </body>
+</html>

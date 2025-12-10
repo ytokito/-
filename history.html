@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>大日本十熙人社会主義共和国連邦 - 歴史</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #af0000; /* 文字色統一 */
+      }
+      header {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      /* 国旗を画面いっぱいに表示 */
+      header .flag-bg {
+        width: 100%;
+        height: 100vh; /* ブラウザの高さ全体 */
+        object-fit: cover;
+        display: block;
+      }
+      header .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 3.5rem;
+        color: white;
+      }
+      header p {
+        margin: 15px 0 0;
+        font-size: 1.5rem;
+        color: white;
+      }
+      /* 右上メニュー */
+      nav {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 15px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 5px 10px;
+        transition: background-color 0.2s ease;
+      }
+      nav ul li a:hover {
+        background-color: white;
+        color: #de2910;
+        border-radius: 4px;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .timeline {
+        border-left: 3px solid #de2910;
+        padding-left: 20px;
+      }
+      .event {
+        margin-bottom: 30px;
+      }
+      .event h2 {
+        color: #af0000;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+      }
+      .event p {
+        margin: 0;
+        font-size: 0.95rem;
+        color: #af0000;
+      }
+      .list-section {
+        margin-top: 40px;
+      }
+      .list-section h2 {
+        color: #af0000;
+        border-bottom: 2px solid #de2910;
+        padding-bottom: 5px;
+      }
+      .list-section ul {
+        list-style: square;
+        padding-left: 20px;
+        color: #af0000;
+      }
+      footer {
+        background-color: #de2910;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- 国旗を大きく表示 -->
+      <img src="ととと.png" alt="連邦国旗" class="flag-bg" />
+      <div class="overlay">
+        <h1>大日本十熙人社会主義共和国連邦 歴史</h1>
+        <p>建国から現代までの歩み</p>
+      </div>
+      <!-- 右上メニュー -->
+      <nav>
+        <ul>
+          <li><a href="index.html">内閣</a></li>
+          <li><a href="constitution.html">憲法</a></li>
+          <li><a href="culture.html">文化</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="timeline">
+        <div class="event">
+          <h2>1929年 - 愛知県革命</h2>
+          <p>
+            矢留十熙人が愛知県で革命を起こし、社会主義体制を樹立。大日本十熙人社会主義共和国連邦が建国される。
+          </p>
+        </div>
+        <div class="event">
+          <h2>1930年代 - 国内改革</h2>
+          <p>農業改革と産業国有化を推進し、名古屋を首都として急速に発展。</p>
+        </div>
+        <div class="event">
+          <h2>1939〜1945年 - 第二次世界大戦</h2>
+          <p>
+            枢軸国側として参戦。軍需産業を背景に戦線を拡大し、枢軸国勝利に貢献。敗戦国の領土を構成国として編入。
+          </p>
+        </div>
+        <div class="event">
+          <h2>1945年以降 - 戦後秩序の確立</h2>
+          <p>
+            勝利国として国際秩序の中心に立ち、社会主義連邦を拡大。「十熙人モデル」が世界に広がる。
+          </p>
+        </div>
+        <div class="event">
+          <h2>21世紀 - 現代</h2>
+          <p>
+            多国籍連邦として統治機構を整備し、世界最大級の社会主義国家として存在感を示す。
+          </p>
+        </div>
+      </div>
+
+      <div class="list-section">
+        <h2>構成国リスト（戦後編入）</h2>
+        <ul>
+          <li>朝鮮半島社会主義共和国</li>
+          <li>満州人民共和国</li>
+          <li>東南アジア社会主義連邦（ベトナム・ラオス・カンボジア）</li>
+          <li>インドネシア社会主義共和国</li>
+          <li>ドイツ社会主義共和国</li>
+          <li>イタリア社会主義共和国</li>
+          <li>バルカン社会主義連邦（ユーゴスラビア地域）</li>
+          <li>その他ヨーロッパ諸国の一部</li>
+        </ul>
+      </div>
+
+      <div class="list-section">
+        <h2>戦後秩序の特徴</h2>
+        <ul>
+          <li>「十熙人モデル」に基づく計画経済と社会福祉制度の導入</li>
+          <li>連邦制による多国籍統治機構の整備</li>
+          <li>軍需産業から民需産業への転換による生活水準の向上</li>
+          <li>国際社会における社会主義連邦の主導的役割</li>
+          <li>教育・医療・インフラの均等化を目指す政策</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 大日本十熙人社会主義共和国連邦 歴史</p>
+    </footer>
+  </body>
+</html>

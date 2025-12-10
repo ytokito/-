@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>大日本十熙人社会主義共和国連邦 - お問い合わせ</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      header {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      /* 国旗を画面いっぱいに表示 */
+      header .flag-bg {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        display: block;
+      }
+      header .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 3.5rem;
+      }
+      header p {
+        margin: 15px 0 0;
+        font-size: 1.5rem;
+      }
+      nav {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 15px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 5px 10px;
+        transition: background-color 0.2s ease;
+      }
+      nav ul li a:hover {
+        background-color: white;
+        color: #de2910;
+        border-radius: 4px;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h2 {
+        color: #af0000;
+        border-bottom: 2px solid #de2910;
+        padding-bottom: 5px;
+        margin-top: 30px;
+      }
+      p {
+        line-height: 1.6;
+      }
+      form {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+      button {
+        margin-top: 15px;
+        background-color: #de2910;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #af0000;
+      }
+      footer {
+        background-color: #de2910;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- 国旗を大きく表示 -->
+      <img src="ととと.png" alt="連邦国旗" class="flag-bg" />
+      <div class="overlay">
+        <h1>お問い合わせ</h1>
+        <p>ご意見・ご質問をお寄せください</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">内閣</a></li>
+          <li><a href="history.html">歴史</a></li>
+          <li><a href="constitution.html">憲法</a></li>
+          <li><a href="culture.html">文化</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h2>連絡先情報</h2>
+      <p>
+        大日本十熙人社会主義共和国連邦 内閣広報室<br />
+        住所：愛知県愛西市 ○○町<br />
+        電話：000-0000-0000<br />
+        メール：info@federation.jp
+      </p>
+
+      <h2>お問い合わせフォーム</h2>
+      <form action="#" method="post">
+        <label for="name">お名前</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">メッセージ</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">送信</button>
+      </form>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 大日本十熙人社会主義共和国連邦</p>
+    </footer>
+  </body>
+</html>
