@@ -9,17 +9,16 @@
         margin: 0;
         padding: 0;
         background-color: #f4f4f9;
-        color: #af0000; /* 文字色統一 */
+        color: #af0000;
       }
       header {
         position: relative;
         text-align: center;
         color: white;
       }
-      /* 国旗を画面いっぱいに表示 */
       header .flag-bg {
         width: 100%;
-        height: 100vh; /* ブラウザの高さ全体 */
+        height: 100vh;
         object-fit: cover;
         display: block;
       }
@@ -45,7 +44,6 @@
         font-size: 1.5rem;
         color: white;
       }
-      /* 右上メニュー */
       nav {
         position: absolute;
         top: 20px;
@@ -105,6 +103,23 @@
         padding-left: 20px;
         color: #af0000;
       }
+      .map-section {
+        text-align: center;
+        margin-top: 40px;
+      }
+      .map-section h2 {
+        color: #af0000;
+        border-bottom: 2px solid #de2910;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+      }
+      .world-map {
+        max-width: 100%;
+        height: auto;
+        border: 3px solid #de2910;
+        padding: 5px;
+        background-color: #f4f4f9;
+      }
       footer {
         background-color: #de2910;
         color: white;
@@ -116,13 +131,11 @@
   </head>
   <body>
     <header>
-      <!-- 国旗を大きく表示 -->
       <img src="ととと.png" alt="連邦国旗" class="flag-bg" />
       <div class="overlay">
         <h1>大日本十熙人社会主義共和国連邦 歴史</h1>
         <p>建国から現代までの歩み</p>
       </div>
-      <!-- 右上メニュー -->
       <nav>
         <ul>
           <li><a href="index.html">内閣</a></li>
@@ -177,6 +190,11 @@
           <li>バルカン社会主義連邦（ユーゴスラビア地域）</li>
           <li>その他ヨーロッパ諸国の一部</li>
         </ul>
+      </div>
+
+      <div class="map-section">
+        <h2>世界地図</h2>
+        <img src="世界地図.png" alt="赤系の世界地図" class="world-map" />
       </div>
 
       <div class="list-section">
