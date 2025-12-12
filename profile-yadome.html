@@ -125,6 +125,26 @@
           padding: 15px;
         }
       }
+
+      @media screen and (max-width: 768px) {
+        nav ul {
+          flex-direction: row; /* 横並び維持 */
+          flex-wrap: wrap; /* 折り返し可能に */
+          gap: 12px; /* 少し広めに */
+        }
+
+        nav ul li a {
+          font-size: 1.2rem; /* フォントを大きく */
+          padding: 10px 14px; /* タップしやすいように余白も拡大 */
+          background: rgba(255, 255, 255, 0.15); /* 背景を少し付けて見やすく */
+          border-radius: 6px;
+        }
+
+        nav ul li a:hover {
+          background-color: white;
+          color: #de2910;
+        }
+      }
     </style>
   </head>
   <body>
