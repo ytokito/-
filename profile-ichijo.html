@@ -71,6 +71,56 @@
         padding: 10px;
         margin-top: 40px;
       }
+      /* スマホ向けレスポンシブ調整 */
+      @media screen and (max-width: 768px) {
+        header .flag-bg {
+          height: 250px; /* ヘッダー画像を少し低めに */
+        }
+
+        header h1 {
+          font-size: 1.8rem; /* タイトル文字を縮小 */
+          padding: 0 10px; /* 左右に余白を入れて折返し防止 */
+        }
+
+        header p {
+          font-size: 1rem;
+          padding: 0 10px;
+        }
+
+        nav {
+          position: static; /* 右上固定を解除して下に配置 */
+          margin-top: 10px;
+          text-align: center;
+        }
+
+        nav ul {
+          flex-direction: column; /* 縦並びに変更 */
+          gap: 10px;
+        }
+
+        nav ul li a {
+          display: block;
+          background: rgba(255, 255, 255, 0.2);
+          border-radius: 4px;
+        }
+
+        .container {
+          padding: 10px;
+        }
+
+        .member-grid {
+          grid-template-columns: 1fr; /* 1列表示に */
+        }
+
+        .member-card img {
+          height: auto; /* 高さ固定を解除して自然に縮小 */
+        }
+
+        footer {
+          font-size: 0.9rem;
+          padding: 15px;
+        }
+      }
     </style>
   </head>
   <body>

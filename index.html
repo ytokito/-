@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>大日本十熙人社会主義共和国連邦 - 内閣</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       body {
         font-family: "Arial", sans-serif;
@@ -18,7 +19,7 @@
       }
       header .flag-bg {
         width: 100%;
-        height: 450px; /* ヘッダー専用の高さ */
+        height: 450px; /* PC用の高さ */
         object-fit: cover;
         display: block;
       }
@@ -119,6 +120,48 @@
         text-align: center;
         padding: 10px;
         margin-top: 20px;
+      }
+
+      /* 📱 スマホ向けレスポンシブ調整 */
+      @media screen and (max-width: 768px) {
+        header .flag-bg {
+          height: 250px; /* ヘッダー画像を縮小 */
+        }
+        header h1 {
+          font-size: 1.8rem;
+          padding: 0 10px;
+        }
+        header p {
+          font-size: 1rem;
+          padding: 0 10px;
+        }
+        nav {
+          position: static; /* 固定解除 */
+          margin-top: 10px;
+          text-align: center;
+        }
+        nav ul {
+          flex-direction: column; /* 縦並び */
+          gap: 10px;
+        }
+        nav ul li a {
+          display: block;
+          background: rgba(255, 255, 255, 0.2);
+          border-radius: 4px;
+        }
+        .container {
+          padding: 10px;
+        }
+        .member-grid {
+          grid-template-columns: 1fr; /* 1列表示 */
+        }
+        .member-card img {
+          height: auto; /* 高さ自動調整 */
+        }
+        footer {
+          font-size: 0.9rem;
+          padding: 15px;
+        }
       }
     </style>
   </head>
